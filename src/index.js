@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home';
-import Blog from './Blog';
 import Main from './Main';
 import { Router, Route, browserHistory } from 'react-router';
 

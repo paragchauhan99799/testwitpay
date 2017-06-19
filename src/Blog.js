@@ -28,13 +28,13 @@ class Blog extends Component {
       <div className="row justify-content-center">
         <div className="padding10 col-md-6 col-sm-8">
           <div className="padding10 authorData flex align-vertical-bottom">
-            <img src={data.imgAuthor} alt="Img 1"/>
+            <img src={data.imgAuthor} className="imgPreview" alt="Img 1"/>
             <div className="authorName">
               <small className="displayBlock">{data.author}</small>
-              <small className="light">{data.time}</small>
+              <small className="light small">{data.time}</small>
             </div>
           </div>
-          <h2 className="padding10">{data.title}</h2>
+          <h3 className="padding10">{data.title}</h3>
           <h3 className="padding10" style={{"color":"#c3c3c3","fontWeight":"inherit"}}>{data.description}</h3>
           <img className="padding10" style={{"width":"100%","height":"45%"}} src={data.imageBlog} alt=""/>
           <p className="padding10">{data.body}</p>

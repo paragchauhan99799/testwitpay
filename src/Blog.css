@@ -1,3 +1,8 @@
+h3{
+    line-height: 1.4!important;
+    font-size: 18px;
+    font-weight: bold;
+}
 .authorData{
     padding: 15px;
 }
@@ -8,20 +13,28 @@
     display: flex;
 }
 .authorName{
-    padding: 10px;
+    padding-left: 10px;
+    line-height: 0.9 !important;
 }
 .displayBlock{
     display: block;
+}
+.small{
+    font-size: 13px;
 }
 .light{
     color: #c3c3c3;
 }
 p{
-    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    font-family: Georgia;
     letter-spacing: .01rem;
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
     line-height: 1.58;
     letter-spacing: -.003em;
+}
+.imgPreview{
+    width: 60px;
+    height: 50px;
 }
