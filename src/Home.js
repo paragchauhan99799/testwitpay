@@ -21,7 +21,10 @@ class Home extends Component {
   }
   addDataOnScroll(event) {
     let scrollTop = event.target.body.scrollTop;
-    if(scrollTop > 250) {
+    let scrollHeight = event.target.body.scrollHeight;
+    let clientHeight = window.innerHeight;
+    console.log(scrollTop, clientHeight, scrollHeight);
+    if(scrollTop + clientHeight >= (scrollHeight - 30)) {
         let newArray = [...this.state.ClassBlogData,this.props.BlogData[0],this.props.BlogData[1],this.props.BlogData[2]];
         this.setState({ClassBlogData: newArray});
     }
