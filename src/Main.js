@@ -45,23 +45,22 @@ class Main extends Component {
     return (
       <div className="">
         <div className="row" style={{"padding":"20px 0px"}}>
-          <div className="col-md-2 col-sm-0 nopadding"></div>
-          <div className="col-md-8 col-sm-12 nopadding">
+          <div className="col-md-2 col-sm-hidden"></div>
+          <div className="col-md-8 col-sm-12">
             <Header onChange={this.onChangeHome.bind(this)}/>
           </div>
-          <div className="col-md-2 col-sm-0 nopadding"></div>
+          <div className="col-md-2 col-sm-hidden"></div>
         </div>
         <div className="row" style={{"color":"black"}}>
-          <div className="col-md-2 col-sm-0 nopadding"></div>
-          <h3 style={{"padding":"5px"}} >Popular on Media</h3>
-          <div className="col-md-2 col-sm-0 nopadding"></div>
+          <div className="col-md-2 col-sm-hidden"></div>
+          <h3  className="col-md-8 col-sm-hidden" style={{"paddingLeft":"30px"}}>Popular on Media</h3>
+          <div className="col-md-2 col-sm-hidden"></div>
         </div>
-        <div className="row nopadding">
           {
             this.state.link === '/blog' ?
             <Blog BlogData={this.state.BlogData}/> : <Home BlogData={this.state.AllData} onLike={this.onLike.bind(this)} onChange={this.onChange.bind(this)}/>
           }
-        </div>
+        
       </div>
     );
   }

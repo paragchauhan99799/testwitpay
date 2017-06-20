@@ -32,14 +32,14 @@ class Home extends Component {
     const onChange = this.props.onChange;
     const onLike = this.props.onLike;
     return (
-    <div className="row">
-      <div className="col col-md-2 col-sm-0 nopadding"></div>
-      <div className="col row col-md-8 col-sm-12 nopadding">
+    <div className="col-md-12 col-md-12 nopadding">
+      <div className="col-md-8 push-md-2 col-sm-12 col-xs-12">
+        <div className="row">
         {
         BlogData.map(function(data, index) {
         return(
-          <div className="blogDiv col col-md-6 col-sm-12 nopadding" key={index}>
-            <div className="row margin0">
+          <div className="blogDiv col-md-6 col-sm-12" key={index}>
+            <div className="row margin0" style={{"border":"1px solid black"}}>
                 <div className="col-md-4 col-sm-12 nopadding" style={{"height":"235px"}}>
                     <img className="blogkimage" onClick={(e) => {console.log(data);onChange(data);}} style={{"width":"100%","height":"100%","cursor":"pointer"}} src={data.imageBlog} alt="Img 1"/>
                 </div>
@@ -64,8 +64,8 @@ class Home extends Component {
         )
         })
         }
+        </div>
       </div>
-      <div className="col col-md-2 col-sm-0 nopadding"></div>
     </div>
     );
   }

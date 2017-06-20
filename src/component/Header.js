@@ -5,9 +5,8 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
       return (
-          <div className="col-md-12 col-sm-12" style={{"borderTop":"1px solid rgba(0,0,0,.44)","borderBottom":"1px solid rgba(0,0,0,.44)", "padding":"10px 0px"}}>
+          <div style={{"borderTop":"1px solid rgba(0,0,0,.44)","borderBottom":"1px solid rgba(0,0,0,.44)", "padding":"10px 0px"}}>
                   <a href="" onClick={() => this.props.onChange()}>Home</a>
-                  <a href="" onClick={() => this.props.onChange()}>Popular on Medium</a>
                   <a href="" onClick={() => this.props.onChange()}>Technology</a>
                   <a href="" onClick={() => this.props.onChange()}>Creativity</a>
               </div>

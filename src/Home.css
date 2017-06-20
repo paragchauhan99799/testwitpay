@@ -7,16 +7,19 @@ h3{
     color :rgba(0,0,0,.44)!important;
 }
 .blogDiv{
-    padding: 7px;
     margin: auto;
-    border: 1px solid #c3c3c3;
-    margin-bottom: 3%;
+    margin-bottom: 15px;
 }
 .title{
     line-height: 0.8 !important;
+    min-height: 50px;
 }
 .blogData{
-    padding: 13px;
+    /*padding: 13px;*/
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
 }
 .authorName{
     line-height: 0.9 !important;
@@ -25,8 +28,8 @@ h3{
     display: block;
 }
 .author{
-    position: relative;
-    margin-top: 80px;
+    padding-top: 10px;
+    /*margin-top: 80px;*/
 }
 .flex{
     display: flex;
@@ -44,8 +47,7 @@ h3{
     font-size: 13px;
 }
 .liked{
-    padding-left: 60px;
-    padding-top: 7px;
+    padding-left: 70px;
     font-size: 17px;
     color: blue;
 }
@@ -54,4 +56,7 @@ h3{
     padding-left: 60px;
     padding-top: 4px;
     color :rgba(0,0,0,.44)!important;
+}
+.blogkimage{
+    object-fit: cover;
 }
